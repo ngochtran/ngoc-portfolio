@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
+import Template from '../../template-items/Template';
 import './Projects.css';
 
 const Projects = () => {
   return (
-    <h2>Hello</h2>
+    <Template>
+    </Template>
   );
 };
 

@@ -1,210 +1,122 @@
-header .nav-area {
-    background-image: linear-gradient(to right, #a8c1ff, #3f2b96);
-    color: #212529;
-    width: 100%;
-    position: fixed;
-    left: 0;
-  }
-  
-  .navbar {
-    background-color: transparent; /* Set the background color of the navbar to transparent */
-    z-index: 9999;
-    width: 100%;
-    padding-left: 40px;
-  }
-  
-  .navbar-link {
-    opacity: 1; /* Ensure the text in the navbar is fully opaque */
-  }
-  
-  .nav-area {
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    margin: auto;
-    height: 80px;
-    overflow: visible; /* Remove the horizontal scrolling */
-    white-space: nowrap;
-    z-index: 9999;
-  }
-  
-  .logo a {
-    margin-right: auto;
-    display: inline-block;
-    margin-left: 7rem;
-  }
-  
-  #phage-logo {
-    margin-top: 10px;
-    width: 125px;
-  }
-  
+.navbar {
+  background-color: transparent;
+  z-index: 9999;
+  width: 100%;
+  display: flex;
+}
+
+.nav-area {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+  height: 80px;
+  overflow: visible;
+  white-space: nowrap;
+  z-index: 9999;
+}
+
+.logo a {
+  margin-left: 6rem;
+}
+
+#name-logo {
+  width: 230px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.navbar-item {
+  padding: 0 25px;
+}
+
+.navbar-title {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar-link {
+  display: inline;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.arrow::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.28em;
+  border-top: 0.42em solid;
+  border-right: 0.32em solid transparent;
+  border-left: 0.32em solid transparent;
+}
+
+.navbar-title {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; /* Add transition for color property */
+}
+
+.navbar-title:hover {
+  color: grey;
+}
+
+.mobile-menu-icon {
+  display: none; /* Initially hide the hamburger icon */
+  cursor: pointer;
+  font-size: 24px;
+  color: black; /* Adjust the color as needed */
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+@media (max-width: 1100px) {
   .navbar-menu {
-    list-style: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: rgb(160, 153, 141);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 100px;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  .mobile-menu-open {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
+    transform: translateX(0%);
   }
-  
+
   .navbar-item {
-    margin: 0;
-    padding: 0 15px;
-    position: relative;
+    padding: 15px;
   }
-  
-  .navbar-title {
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .has-dropdown .navbar-title {
-    cursor: pointer;
-  }
-  
-  .navbar-dropdown {
-    position: absolute;
-    left: 50%; /* Set the left position to 50% */
-    transform: translateX(-50%); /* Center the dropdown box horizontally */
-    box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
-      0 4px 6px -2px rgba(71, 63, 79, 0.16);
-    font-size: 0.875rem;
-    z-index: 9999;
-    min-width: 10rem;
-    padding: 0.5rem 0;
-    list-style: none;
-    background-color: #fff;
-    border-radius: 0.5rem;
-    visibility: hidden;
-    margin-top: 10px; /* Add a margin to position the dropdown below the navbar */
-    background-color: #3f2b96f3; /* Set the background color to a transparent red */
-    opacity: 0; /* Set initial opacity to 0 */
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  }
-  
-  .navbar-item:hover .navbar-dropdown {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .navbar-link {
-    display: inline;
-    font-size: inherit;
-    color: inherit;
-    text-decoration: none;
-    text-decoration: none;
-  }
-  
-  .navbar-dropdown .navbar-link,
-  .navbar-dropdown .navbar-link:hover {
-    color: #ffffff; /* Change the color of the dropdown links */
-    text-decoration: none; /* Remove the underline on the dropdown links */
-    opacity: 1;
-  }
-  
-  .arrow::after {
-    content: "";
-    display: inline-block;
-    margin-left: 0.28em;
-    border-top: 0.42em solid;
-    border-right: 0.32em solid transparent;
-    border-left: 0.32em solid transparent;
-  }
-  
-  .navbar-dropdown-item a {
-    display: block;
-    text-align: center;
-    color: white; /* Set the text color to fully opaque */
-    text-decoration: none;
-    margin: 10px;
-    transition: color 0.3s ease-in-out;
-    background-color: transparent;
-  }
-  
-  .navbar-dropdown-item:hover a {
-    color: lightblue;
-  }
-  
-  .navbar-title {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out; /* Add transition for color property */
-  }
-  
-  .navbar-title:hover {
-    color: lightblue;
-  }
-  
+
   .mobile-menu-icon {
-    display: none; /* Initially hide the hamburger icon */
+    position: absolute;
     cursor: pointer;
-    font-size: 24px;
-    color: white; /* Adjust the color as needed */
-    margin-left: auto;
-    margin-right: 50px;
+    color: black;
+    display: block;
+    z-index: 9999;
+    right: 0;
   }
-  
-  @media (max-width: 900px) {
-    .navbar-menu {
-      flex-direction: column;
-      position: absolute;
-      top: 80px;
-      right: 0px;
-      width: 60vw;
-      background-color: #3f2b96; /* Match the color theme */
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-      display: none;
-    }
-  
-    .navbar-menu.mobile-menu-open {
-      display: flex;
-    }
-  
-    .navbar-item {
-      padding: 15px;
-    }
-  
-    .navbar-dropdown {
-      background-color: #3f2b96; /* Match the color theme */
-      border-top: 1px solid #fff; /* Add a white border at the top */
-      padding: 15px;
-      min-width: 200px; /* Make the dropdown wider */
-      border-radius: 0;
-      max-height: 0; /* Initially set max-height to 0 */
-      overflow: hidden; /* Hide content that exceeds max-height */
-      transition: max-height 0.3s ease-in-out; /* Add transition for max-height */
-    }
-  
-    .navbar-dropdown-item a {
-      color: #fff; /* Match the color theme */
-      text-decoration: none;
-      margin: 10px 0;
-      transition: color 0.3s ease-in-out;
-    }
-  
-    .navbar-dropdown-item a:hover {
-      color: lightblue;
-    }
-  
-    .navbar-item:hover .navbar-dropdown {
-      max-height: 1000px; /* Expand the dropdown to a large enough max-height */
-      position: relative; /* Change position to relative */
-      z-index: 1; /* Ensure the expanded dropdown is on top of other elements */
-    }
-  
-    .navbar-title {
-      position: relative; /* Add relative positioning to title options */
-      width: 100%; /* Set a fixed width to keep it centered */
-      text-align: center; /* Keep the title centered */
-    }
-  
-    .navbar-item:hover .navbar-title {
-      z-index: 0; /* Push down the other title options */
-    }
-  
-    .mobile-menu-icon {
-      display: block;
-    }
+
+  #name-logo {
+    width: 200px;
   }
-  
+}
+
+@media (max-width: 450px) {
+  .logo a {
+    margin-left: 2rem;
+  }
+}

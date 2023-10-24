@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import { MenuTitles } from './MenuTitles';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'; // Add the 'faTimes' icon for the X icon.
 
 import './Navbar.css';
+import NgocLogo from '../../../images/NgocLogo.png';
 
-library.add(faCaretDown, faBars);
+library.add(faCaretDown, faBars, faTimes);
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
@@ -33,28 +34,19 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  useEffect(() => {
-    window.addEventListener('scroll', showProgressBar);
-    return () => window.removeEventListener('scroll', showProgressBar);
-  }, []);
-
   return (
-    <header className="App-header">
+    <header className="app-header">
       <div className="row nav-area">
         <div className="col logo">
-          <a href="/stanford">
-            <img
-              id="phage-logo"
-              src="https://static.igem.wiki/teams/4951/wiki/graphics/phagelogo.png"
-              alt="Phage Logo"
-            />
+          <a href="/">
+            <img id="name-logo" src={NgocLogo} alt="Name Logo" />
           </a>
         </div>
-        <div className="col">
+        <div className="col nav-text">
           <nav className="navbar">
             {/* Hamburger Menu Icon */}
             <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
-              <FontAwesomeIcon icon={['fas', 'bars']} />
+              <FontAwesomeIcon icon={isMobileMenuOpen ? 'times' : ['fas', 'bars']} />
             </div>
             <ul className={`navbar-menu ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
               {MenuTitles.map((menu, index) => (
@@ -87,7 +79,7 @@ const Navbar = () => {
             </ul>
           </nav>
         </div>
-        </div>
+      </div>
     </header>
   );
 };

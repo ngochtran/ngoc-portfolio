@@ -1,18 +1,18 @@
 export const MenuTitles = [
     {
-        title: "home",
-        display: "Home",
+        title: "",
+        display: "HOME",
     },{
         title: "about-me",
-        display: "About Me",
+        display: "ABOUT ME",
     },{
         title: "projects",
-        display: "Projects",
+        display: "PROJECTS",
     },{
         title: "blog",
-        display: "Blog",
+        display: "BLOG",
     },{
         title: "art-portfolio",
-        display: "Art Portfolio",
+        display: "ART PORTFOLIO",
     },
 ]

@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
+import Template from '../../template-items/Template';
 
 const ArtGallery = () => {
   return (
-    <h2>Hello</h2>
+    <Template>
+    </Template>
   );
 };
 

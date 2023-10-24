@@ -1,0 +1,299 @@
+/* ------------------------- ROOM ------------------------------*/
+.room{
+    position: relative;
+    display: block;
+    width: 90%;
+}
+.img-base{
+    position: relative; 
+    display: block;
+    width: 90%;
+}
+.img-hover{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width: 90%;
+}
+.shelf-button-link{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+}
+.shelf-button{
+    background-color: transparent;
+    border: none;
+    font-size: 60px;
+    color: transparent; 
+}
+.tv-button-link{
+    position: absolute;
+    top: 48%;
+    left: 10%;
+}
+.tv-button{
+    background-color: transparent;
+    border: none;
+    font-size: 120px;
+    color: transparent; 
+}
+.painting-button-link{
+    position: absolute;
+    top: 28%;
+    left: 7%;
+}
+.painting-button{
+    background-color: transparent;
+    border: none;
+    font-size: 110px;
+    color: transparent; 
+}
+.files-button-link{
+    position: absolute;
+    top: 63%;
+    left: 56%;
+}
+.files-button{
+    background-color: transparent;
+    border: none;
+    font-size: 55px;
+    color: transparent; 
+}
+.board-button-link{
+    position: absolute;
+    top: 35%;
+    left: 63%;
+}
+.board-button{
+    background-color: transparent;
+    border: none;
+    font-size: 120px;
+    color: transparent; 
+}
+.reset-button-link{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.reset-button{
+    background-color: transparent;
+    border: none;
+    font-size: 220px;
+    color: transparent; 
+}
+
+/* ------------------------- MINIMIZE BUTTONS ------------------------------*/
+
+@media screen and (max-width: 1200px) and (min-width: 993px){
+    .shelf-button-link{
+        position: absolute;
+        top: 18%;
+        left: 55%;
+    }
+    .shelf-button{
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        color: transparent; 
+    }
+    .tv-button-link{
+        position: absolute;
+        top: 48%;
+        left: 10%;
+    }
+    .tv-button{
+        background-color: transparent;
+        border: none;
+        font-size: 80px;
+        color: transparent; 
+    }
+    .painting-button-link{
+        position: absolute;
+        top: 26%;
+        left: 8%;
+    }
+    .painting-button{
+        background-color: transparent;
+        border: none;
+        font-size: 80px;
+        color: transparent; 
+    }
+    .files-button-link{
+        position: absolute;
+        top: 63%;
+        left: 56%;
+    }
+    .files-button{
+        background-color: transparent;
+        border: none;
+        font-size: 40px;
+        color: transparent; 
+    }
+    .board-button-link{
+        position: absolute;
+        top: 35%;
+        left: 63%;
+    }
+    .board-button{
+        background-color: transparent;
+        border: none;
+        font-size: 80px;
+        color: transparent; 
+    }
+    .reset-button-link{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+    .reset-button{
+        background-color: transparent;
+        border: none;
+        font-size: 220px;
+        color: transparent; 
+    }
+}
+
+/* ------------------------- TEXT ------------------------------*/
+.home-text{
+    text-align: center;
+    margin-top: 25%;
+}
+.name{
+    color: #000000;
+    margin-top: 25%;
+}
+.name h1{
+    font-size: 64px;
+}
+.nav{
+    display: block;
+    text-align: center; 
+    padding: 0px;
+}
+.nav .nav-item .nav-link{
+    color:#000000;
+    font-size: 24px;
+}
+
+.nav .nav-item .nav-link:hover{
+    color: grey;
+    transform: scale(1.1);
+}
+
+.nav .nav-item-icon .nav-link{
+    color:#000000;
+    font-size: 30px;
+}
+
+.nav .nav-item-icon .nav-link:hover{
+    color: grey;
+    transform: scale(1.1);
+}
+
+ul.nav.flex-row {
+    padding-top: 20px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* ------------------------- RESPONSIVE DEVICE ------------------------------*/
+
+@media screen and (max-width: 992px) {
+    .home-text{
+        text-align: center;
+        margin-top: 0%;
+    }
+    .room{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    .img-base{
+        position: relative; 
+        display: block;
+        width: 100%;
+    }
+    .name{
+        margin-top: 15px;
+    }
+    .img-hover{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: block;
+        width: 100%;
+    }
+    .shelf-button-link{
+        position: absolute;
+        top: 19%;
+        left: 60%;
+    }
+    .shelf-button{
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        color: transparent; 
+    }
+    .tv-button-link{
+        position: absolute;
+        top: 48%;
+        left: 10%;
+    }
+    .tv-button{
+        background-color: transparent;
+        border: none;
+        font-size: 80px;
+        color: transparent; 
+    }
+    .painting-button-link{
+        position: absolute;
+        top: 26%;
+        left: 8%;
+    }
+    .painting-button{
+        background-color: transparent;
+        border: none;
+        font-size: 80px;
+        color: transparent; 
+    }
+    .files-button-link{
+        position: absolute;
+        top: 63%;
+        left: 56%;
+    }
+    .files-button{
+        background-color: transparent;
+        border: none;
+        font-size: 40px;
+        color: transparent; 
+    }
+    .board-button-link{
+        position: absolute;
+        top: 35%;
+        left: 70%;
+    }
+    .board-button{
+        background-color: transparent;
+        border: none;
+        font-size: 80px;
+        color: transparent; 
+    }
+    .reset-button-link{
+        position: absolute;
+        top: 13%;
+        left: 6%;
+    }
+    .reset-button{
+        background-color: transparent;
+        border: none;
+        font-size: 80px;
+        color: transparent; 
+        width: 300px;
+        height: 400px;
+    }
+    
+}
+
