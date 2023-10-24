@@ -1,0 +1,33 @@
+#headshot1{
+    width: 45%;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 85vh;
+}
+
+.intro-header{
+    font-size: 50px;
+}
+
+.intro-header-2{
+    font-size: 130px;
+}
+
+.intro-box-1{
+    margin: 200px;
+    margin-bottom: 0;
+}
+
+.intro-box-2{
+    margin: 200px;
+    margin-top: 0;
+}
+
+.particle-canvas {
+    position: absolute;
+    z-index: 999;
+}
