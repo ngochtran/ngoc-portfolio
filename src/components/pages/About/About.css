@@ -1,12 +1,41 @@
-#headshot1{
-    width: 45%;
+.rounded-image {
+    border-radius: 15px; /* Adjust the radius as needed */
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    margin: 150px;
+}
+.headshot1{
+    max-width: 300px;
+}
+
+.black-section{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(34, 34, 36);
+    height: 100vh;
+}
+
+.bio-info{
+    display: flex; /* Add this line */
+    flex-direction: column; /* To stack h1 and p vertically */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 100px;
+}
+
+.bio-info h1{
+    font-size: 42px;
+}
+
+.bio-info p{
+    font-size: 24px;
 }
 
 .introduction {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 85vh;
+    height: 100vh;
 }
 
 .intro-header{
@@ -18,7 +47,7 @@
 }
 
 .intro-box-1{
-    margin: 200px;
+    margin-left: 200px;
     margin-bottom: 0;
 }
 

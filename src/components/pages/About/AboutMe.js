@@ -3,7 +3,7 @@ import './About.css';
 import Template from '../../template-items/Template';
 import SparklingCursor from '../../SparklingCursor';
 
-import headshot1 from '../../../images/NgocHeadshot.png';
+import headshot1 from '../../../images/NgocHeadshot.jpg';
 
 const AboutMe = () => {
   const words = ['a Software Dev', 'a Designer', 'an Artist', 'a Learner', 'a Problem Solver'];
@@ -61,10 +61,13 @@ const AboutMe = () => {
         <div className="intro-box-2">
           <h1 className="intro-header-2 lato">{currentWord}</h1>
         </div>
+        <SparklingCursor />
       </section>
-      <SparklingCursor />
-      <section className="bio">
-        <img id="headshot1" src={headshot1} className="img-base" alt="base"/>
+      <section className="bio black-section">
+        <img id="headshot1" src={headshot1} className="rounded-image" alt="base"/>
+        <div className="bio-info center">
+        <h1 className="">NGOC TRAN • Stanford '26 • (she/her)</h1>
+        <p className="lato">I am a first-generation Vietnamese-American college student majoring in Computer Science.<br></br><br></br>Particularly, I am interested in game design, web development, and bridging interdisciplinary fields to create cool things.<br></br><br></br>At Stanford, I am involved in the Vietnamese American Association (SVSA) as the Public Relations Co-chair, Women in Design (SWID), the Storyboarding Club, Stanford iGEM, and the Game Development Club.</p></div>
       </section>
     </Template>
   );
