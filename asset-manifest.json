@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ngoc-portfolio/static/css/main.c538204d.css",
+    "main.css": "/ngoc-portfolio/static/css/main.f93785fb.css",
     "main.js": "/ngoc-portfolio/static/js/main.1a640235.js",
     "static/media/Beemo.jpg": "/ngoc-portfolio/static/media/Beemo.9f22ac5bcf75937b2771.jpg",
     "static/media/Katsu.png": "/ngoc-portfolio/static/media/Katsu.fd8c944229f1ab2e5074.png",
@@ -19,11 +19,11 @@
     "static/media/NgocHeadshot.jpg": "/ngoc-portfolio/static/media/NgocHeadshot.6c90d6e9b7d376400c1f.jpg",
     "static/media/hover-empty.png": "/ngoc-portfolio/static/media/hover-empty.c3ff331cdfc4dd797177.png",
     "index.html": "/ngoc-portfolio/index.html",
-    "main.c538204d.css.map": "/ngoc-portfolio/static/css/main.c538204d.css.map",
+    "main.f93785fb.css.map": "/ngoc-portfolio/static/css/main.f93785fb.css.map",
     "main.1a640235.js.map": "/ngoc-portfolio/static/js/main.1a640235.js.map"
   },
   "entrypoints": [
-    "static/css/main.c538204d.css",
+    "static/css/main.f93785fb.css",
     "static/js/main.1a640235.js"
   ]
 }
