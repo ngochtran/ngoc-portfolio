@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/ngoc-portfolio/static/css/main.f93785fb.css",
-    "main.js": "/ngoc-portfolio/static/js/main.1a640235.js",
-    "static/media/Beemo.jpg": "/ngoc-portfolio/static/media/Beemo.9f22ac5bcf75937b2771.jpg",
-    "static/media/Katsu.png": "/ngoc-portfolio/static/media/Katsu.fd8c944229f1ab2e5074.png",
-    "static/media/base4.png": "/ngoc-portfolio/static/media/base4.f9e4764fce6a7d47d799.png",
-    "static/media/base3.png": "/ngoc-portfolio/static/media/base3.b1a7eb390352765b3c38.png",
-    "static/media/base5.png": "/ngoc-portfolio/static/media/base5.b1a7eb390352765b3c38.png",
-    "static/media/base2.png": "/ngoc-portfolio/static/media/base2.27e576cf7c4b53db2a41.png",
-    "static/media/base6.png": "/ngoc-portfolio/static/media/base6.27e576cf7c4b53db2a41.png",
-    "static/media/base1.png": "/ngoc-portfolio/static/media/base1.c9ea34caebab81605b3a.png",
-    "static/media/BioE.jpg": "/ngoc-portfolio/static/media/BioE.e99184254ec7db53a149.jpg",
-    "static/media/shelf-hover.png": "/ngoc-portfolio/static/media/shelf-hover.7e4be8b9eb36fcf27dab.png",
-    "static/media/painting-hover.png": "/ngoc-portfolio/static/media/painting-hover.c83aacdede0a9e9e69fa.png",
-    "static/media/board-hover.png": "/ngoc-portfolio/static/media/board-hover.f8c9032fc619013707b7.png",
-    "static/media/tv-hover.png": "/ngoc-portfolio/static/media/tv-hover.2fae7d3788861729d8b3.png",
-    "static/media/files-hover.png": "/ngoc-portfolio/static/media/files-hover.97304151c3e5bc913017.png",
-    "static/media/NgocHeadshot.jpg": "/ngoc-portfolio/static/media/NgocHeadshot.6c90d6e9b7d376400c1f.jpg",
-    "static/media/hover-empty.png": "/ngoc-portfolio/static/media/hover-empty.c3ff331cdfc4dd797177.png",
-    "index.html": "/ngoc-portfolio/index.html",
-    "main.f93785fb.css.map": "/ngoc-portfolio/static/css/main.f93785fb.css.map",
-    "main.1a640235.js.map": "/ngoc-portfolio/static/js/main.1a640235.js.map"
+    "main.css": "./static/css/main.c538204d.css",
+    "main.js": "./static/js/main.3e311794.js",
+    "static/media/Beemo.jpg": "./static/media/Beemo.9f22ac5bcf75937b2771.jpg",
+    "static/media/Katsu.png": "./static/media/Katsu.fd8c944229f1ab2e5074.png",
+    "static/media/base4.png": "./static/media/base4.f9e4764fce6a7d47d799.png",
+    "static/media/base3.png": "./static/media/base3.b1a7eb390352765b3c38.png",
+    "static/media/base5.png": "./static/media/base5.b1a7eb390352765b3c38.png",
+    "static/media/base2.png": "./static/media/base2.27e576cf7c4b53db2a41.png",
+    "static/media/base6.png": "./static/media/base6.27e576cf7c4b53db2a41.png",
+    "static/media/base1.png": "./static/media/base1.c9ea34caebab81605b3a.png",
+    "static/media/BioE.jpg": "./static/media/BioE.e99184254ec7db53a149.jpg",
+    "static/media/shelf-hover.png": "./static/media/shelf-hover.7e4be8b9eb36fcf27dab.png",
+    "static/media/painting-hover.png": "./static/media/painting-hover.c83aacdede0a9e9e69fa.png",
+    "static/media/board-hover.png": "./static/media/board-hover.f8c9032fc619013707b7.png",
+    "static/media/tv-hover.png": "./static/media/tv-hover.2fae7d3788861729d8b3.png",
+    "static/media/files-hover.png": "./static/media/files-hover.97304151c3e5bc913017.png",
+    "static/media/NgocHeadshot.jpg": "./static/media/NgocHeadshot.6c90d6e9b7d376400c1f.jpg",
+    "static/media/hover-empty.png": "./static/media/hover-empty.c3ff331cdfc4dd797177.png",
+    "index.html": "./index.html",
+    "main.c538204d.css.map": "./static/css/main.c538204d.css.map",
+    "main.3e311794.js.map": "./static/js/main.3e311794.js.map"
   },
   "entrypoints": [
-    "static/css/main.f93785fb.css",
-    "static/js/main.1a640235.js"
+    "static/css/main.c538204d.css",
+    "static/js/main.3e311794.js"
   ]
 }
