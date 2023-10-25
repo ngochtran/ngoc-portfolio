@@ -3,7 +3,6 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -61,7 +60,7 @@ function App() {
                 <b>outside box</b>
               </button>
             </div>
-            <a className="shelf-button-link" href="#" onMouseOver={() => showImage(shelf)}>
+            <a className="shelf-button-link" href="/Ngoc-Tran-Website-Resume.pdf" target="_blank" onMouseOver={() => showImage(shelf)}>
               <button className="shelf-button">
                 <b>shelf</b>
               </button>
@@ -120,9 +119,9 @@ function App() {
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link active" href="#">
-                        resume
-                      </a>
+                    <a className="nav-link active" href="/Ngoc-Tran-Website-Resume.pdf" target="_blank">
+                      Resume
+                    </a>
                     </li>
                     <li className="nav-item-icon">
                       <ul className="nav flex-row">

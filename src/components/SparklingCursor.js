@@ -1,13 +1,13 @@
-/* This Sparkling Cursor was made by following a tutorial 
- * from TA Coding on Youtube, with some minor adjustments
- */
-
 import React, { useEffect, useRef, useState } from "react";
 
 const SparklingCursor = () => {
   const canvasRef = useRef(null);
-  const [canvasSize, setCanvasSize] = useState({ width: window.innerWidth, height: window.innerHeight });
+  const [canvasSize, setCanvasSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
   const maxDistance = 90;
+  const canvasBounds = {};
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -78,23 +78,50 @@ const SparklingCursor = () => {
 
     animate();
 
+    const handleMouseMove = (event) => {
+      const x = event.clientX;
+      const y = event.clientY;
+      if (
+        x >= canvasBounds.left &&
+        x <= canvasBounds.right &&
+        y >= canvasBounds.top &&
+        y <= canvasBounds.bottom
+      ) {
+        for (let i = 0; i < 1; i++) {
+          particles.push(createParticle(x, y - 60));
+        }
+      }
+    };
+
+    const updateCanvasBounds = () => {
+      const canvasRect = canvas.getBoundingClientRect();
+      canvasBounds.left = canvasRect.left;
+      canvasBounds.right = canvasRect.right;
+      canvasBounds.top = canvasRect.top;
+      canvasBounds.bottom = canvasRect.bottom;
+    };
+
+    // Initial bounds setup
+    updateCanvasBounds();
+
+    // Add a mousemove event listener to update cursor position
+    window.addEventListener("mousemove", updateCanvasBounds);
+
+    // Add a mousemove event listener for the cursor effect
+    canvas.addEventListener("mousemove", handleMouseMove);
+
     const handleResize = () => {
-      setCanvasSize({ width: window.innerWidth, height: window.innerHeight });
+      const newWidth = window.innerWidth;
+      const newHeight = window.innerHeight;
+      setCanvasSize({ width: newWidth, height: newHeight });
     };
 
     window.addEventListener("resize", handleResize);
 
-    const handleMouseMove = (event) => {
-      for (let i = 0; i < 1; i++) {
-        particles.push(createParticle(event.clientX, event.clientY - 60));
-      }
-    };
-
-    canvas.addEventListener("mousemove", handleMouseMove);
-
     return () => {
       canvas.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("mousemove", updateCanvasBounds);
     };
   }, [canvasSize]);
 

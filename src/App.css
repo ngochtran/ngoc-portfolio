@@ -18,6 +18,103 @@ body{
     margin-top: 100px;
 }
 
+.top-spacer-sm{
+    margin-top: 50px;
+}
+
 .center{
     text-align: center;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 12px;
+    /* You can adjust the width as needed */
+}
+  
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background: #c7a3e3;
+    border-radius: 12px;
+}
+  
+/* Track on horizontal scrollbar */
+::-webkit-scrollbar-track {
+    background: white;
+}
+  
+/* Handle on horizontal scrollbar */
+::-webkit-scrollbar-thumb:horizontal {
+    background: #c7a3e3;
+}
+  
+/* Track on vertical scrollbar */
+  ::-webkit-scrollbar-track:vertical {
+    background: white;
+}
+  
+/* Handle on vertical scrollbar */
+::-webkit-scrollbar-thumb:vertical {
+    background: #c7a3e3;
+    border-radius: 12px;
+}
+
+.bigger-h1{
+    font-size: 64px;
+}
+
+.white {
+    color: rgb(231, 231, 231);
+}
+
+.black-background{
+    background-color: rgb(34, 34, 36);
+}
+
+.go-up {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    opacity: 0;
+    transition: opacity 0.5s ease
+}
+
+.go-up button {
+    background: none;
+    border: none;
+}
+
+.go-up button img {
+    width: 80px;
+    height: 80px;
+}
+  
+.show {
+    display: block;
+    opacity: 1;
+}
+
+@media screen and (max-width: 920px) {
+    p {
+      font-size: 12px !important; 
+      margin: 8px 0;
+    }
+  
+    h1 {
+      font-size: 32px !important; 
+      margin: 16px 0; 
+    }
+  
+    h2 {
+      font-size: 24px !important; 
+      margin: 16px 0; 
+    }
+  
+    h3 {
+      font-size: 18px !important; 
+      margin: 16px 0; 
+    }
+    .smaller-li{
+        font-size: 12px !important;
+    }
 }

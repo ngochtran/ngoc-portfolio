@@ -2,19 +2,19 @@
 .room{
     position: relative;
     display: block;
-    width: 90%;
+    width: 88%;
 }
 .img-base{
     position: relative; 
     display: block;
-    width: 90%;
+    width: 88%;
 }
 .img-hover{
     position: absolute;
     top: 0px;
     left: 0px;
     display: block;
-    width: 90%;
+    width: 88%;
 }
 .shelf-button-link{
     position: absolute;
@@ -63,7 +63,7 @@
 .board-button-link{
     position: absolute;
     top: 35%;
-    left: 63%;
+    left: 60%;
 }
 .board-button{
     background-color: transparent;
@@ -296,4 +296,3 @@ ul.nav.flex-row {
     }
     
 }
-

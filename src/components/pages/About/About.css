@@ -1,5 +1,5 @@
 .rounded-image {
-    border-radius: 15px; /* Adjust the radius as needed */
+    border-radius: 15px;
     box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
     margin: 150px;
 }
@@ -15,11 +15,11 @@
 }
 
 .bio-info{
-    display: flex; /* Add this line */
-    flex-direction: column; /* To stack h1 and p vertically */
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(231, 231, 231);
     margin-right: 100px;
 }
 
@@ -31,7 +31,7 @@
     font-size: 24px;
 }
 
-.introduction {
+.white-section {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -59,4 +59,175 @@
 .particle-canvas {
     position: absolute;
     z-index: 999;
+}
+
+.content {
+    display: none;
+}
+
+.content .active {
+    display: block !important;
+}
+
+.active {
+    display: block;
+}
+
+.tab-box {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px;
+}
+  
+.tab-btn {
+    background-color: #fff;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.tab-btn.active {
+    background-color: #c7a3e3;
+    color: #fff; 
+}
+
+.courses {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 150px;
+    min-height: 70vh;
+    margin-top: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.section {
+    height: 100vh;
+}
+
+.content-box{
+    margin: 50px;
+}
+
+.column-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+  
+.info-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    min-height: 400px;
+    width: calc(25% - 20px);
+}
+
+.info-box h2{
+    color:#c7a3e3;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+  
+  .sub-section {
+    border-right: 2px solid #000; 
+    padding: 30px;
+    margin: 20px 0; /* Add spacing between subsections */
+    width: 50%;
+}
+  
+  .sub-section:nth-child(3) {
+    border-right: 0; /* Remove top margin for the first subsection */
+}
+
+  .hobby-image{
+    width: 75%;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+@media screen and (max-width: 920px) {
+    .intro-box-1{
+        margin: 50px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .intro-box-2{
+        margin: 50px;
+        margin-top: 0px;
+        padding-bottom: 100px;
+    }
+    #headshot1{
+        width: 70%; /* Set your desired width */
+        height: auto;
+        margin: 0;
+    }
+    .bio-info{
+        margin: 25px;
+    }
+    .black-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .courses{
+        margin: 15px;
+    }
+    .content-box{
+        margin: 0;
+    }
+    .phone-long {
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .tab-box{
+        margin: 0;
+    }
+    .content{
+        margin: 10px;
+    }
+    .info-boxes{
+        margin: 10px;
+        flex-direction: column;
+    }
+    .info-box{
+        width: 80%;
+        min-height: auto;
+        padding-bottom: 30px;
+    }
+    .section-container {
+        flex-direction: column;
+        margin: 15px;
+    }
+    .sub-section {
+        padding: 0;
+        margin: 20px 0; /* Add spacing between subsections */
+        width: 100%;
+        border-right: 0;
+    } 
 }

@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import { MenuTitles } from './MenuTitles';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'; // Add the 'faTimes' icon for the X icon.
-
+import { faCaretDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
 import NgocLogo from '../../../images/NgocLogo.png';
 
@@ -44,8 +43,7 @@ const Navbar = () => {
         </div>
         <div className="col nav-text">
           <nav className="navbar">
-            {/* Hamburger Menu Icon */}
-            <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
+            <div className={`mobile-menu-icon ${isMobileMenuOpen ? 'white-icon' : 'black-icon'}`} onClick={toggleMobileMenu}>
               <FontAwesomeIcon icon={isMobileMenuOpen ? 'times' : ['fas', 'bars']} />
             </div>
             <ul className={`navbar-menu ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>

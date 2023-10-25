@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import upArrow from '../../images/UpArrow.png';
+
 const GoUp = () => {
   const [showButton, setShowButton] = useState(false);
 
@@ -29,7 +31,7 @@ const GoUp = () => {
     <div className={`go-up ${showButton ? 'show' : ''}`}>
       <button onClick={scrollToTop}>
         <img
-          src="https://static.igem.wiki/teams/4951/wiki/graphics/goup.svg"
+          src={upArrow}
           alt="Go Up"
         />
       </button>
