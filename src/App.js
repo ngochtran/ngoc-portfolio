@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { useLocation } from 'react-router-dom';
 import React, { useEffect } from 'react';
